@@ -6,7 +6,7 @@ namespace DecoratorPattern
     {
         static void Main(string[] args)
         {
-            Gun defaultGun = new Gun();
+            IPulling defaultGun = new Gun();
             Wookie chewie = new Wookie(defaultGun);
 
             chewie.Shoot();
