@@ -25,7 +25,11 @@ namespace DecoratorPattern
 
             this._weapon.Pull(x, y);
 
-            
+            //Here, we use a new decorator :)
+            IPulling laserPulling = new LaserGunDecorator(this._weapon);
+            laserPulling.Pull(x, y);
+
+            // And voila :D
         }
         #endregion
     }

@@ -6,7 +6,10 @@ namespace DecoratorPattern
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Gun defaultGun = new Gun();
+            Wookie chewie = new Wookie(defaultGun);
+
+            chewie.Shoot();
         }
     }
 }
